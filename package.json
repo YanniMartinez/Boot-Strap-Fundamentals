@@ -4,6 +4,7 @@
   "description": "Nuestro primer proyecto en Node JS",
   "main": "index.html",
   "scripts": {
+    "dev": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/YanniMartinez/Node-JS-Fundamentals/issues"
   },
-  "homepage": "https://github.com/YanniMartinez/Node-JS-Fundamentals#readme"
+  "homepage": "https://github.com/YanniMartinez/Node-JS-Fundamentals#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
 }
