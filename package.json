@@ -1,0 +1,19 @@
+{
+  "name": "node-js-fundamentals",
+  "version": "1.0.0",
+  "description": "Nuestro primer proyecto en Node JS",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/YanniMartinez/Node-JS-Fundamentals.git"
+  },
+  "author": "Yanni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YanniMartinez/Node-JS-Fundamentals/issues"
+  },
+  "homepage": "https://github.com/YanniMartinez/Node-JS-Fundamentals#readme"
+}
