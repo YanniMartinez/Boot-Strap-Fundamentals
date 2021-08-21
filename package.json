@@ -14,9 +14,9 @@
   "author": "Yanni",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/YanniMartinez/Node-JS-Fundamentals/issues"
+    "url": "git remote add origin git@github.com:YanniMartinez/Boot-Strap-Fundamentals.git/issues"
   },
-  "homepage": "https://github.com/YanniMartinez/Node-JS-Fundamentals#readme",
+  "homepage": "git remote add origin git@github.com:YanniMartinez/Boot-Strap-Fundamentals.git#readme",
   "devDependencies": {
     "lite-server": "^2.6.1"
   },
