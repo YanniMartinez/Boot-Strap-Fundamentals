@@ -197,3 +197,61 @@ Notaremos que en la consola el proceso sigue corriendo y mostrará el siguiente 
 <div align="center"><img src="media/img/serverRun.png" width="80%"/></div>
 
 Para detener nuestro servidor basta con presionar `ctr + c`.
+
+### Creando primer HTML
+
+Crea un archivo en la ruta principal llamado `index.html` que será la entrada a nuestro servidor, puedes poner una estructura general como la siguiente y guardar tu archivo:
+
+```
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Primer sitio con Angular</title>
+    </head>
+    <body>
+        <h1>Hola Mundo!</h1>
+        <p>Esta sólo es una prueba</p>
+    </body>
+</html>
+```
+
+Ejecuta el servidor con `npm run dev`, veras que te abrirá el navegador, pero en este caso no te marcará error, por que ahora si exitirá el archivo `index.html` y permitirá ver su contenido:
+
+<div align="center"><img src="media/img/indexFir.png" width="80%"/></div>
+
+Y en la consola tendrás algo como lo siguiente:
+
+```
+$ npm run dev
+
+> node-js-fundamentals@1.0.0 dev C:\Users\Yann\Desktop\Cursos Coursera y más\Especialización con Angular\Modulo 1\Node JS Fundamentals
+> lite-server
+
+Did not detect a `bs-config.json` or `bs-config.js` override file. Using lite-server defaults...
+** browser-sync config **
+{
+  injectChanges: false,
+  files: [ './**/*.{html,htm,css,js}' ],
+  watchOptions: { ignored: 'node_modules' },
+  server: {
+    baseDir: './',
+    middleware: [ [Function (anonymous)], [Function (anonymous)] ]
+  }
+}
+[Browsersync] Access URLs:
+ ----------------------------------------
+       Local: http://localhost:3000
+    External: http://192.168.100.203:3000
+ ----------------------------------------
+          UI: http://localhost:3001
+ UI External: http://localhost:3001
+ ----------------------------------------
+[Browsersync] Serving files from: ./
+[Browsersync] Watching files...
+21.08.21 14:22:10 200 GET /index.html
+```
+
+Notamos que retorna un **200** el cual significa que la petición por GET al archivo principal fue satisfactoria.
+
+Ahora sólo queda que modifiques el index.html, lo guardes y verás como de inmediato el servidor actualiza tu navegador para ver los cambios actuales.
