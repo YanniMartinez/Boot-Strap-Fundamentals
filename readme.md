@@ -255,3 +255,72 @@ Did not detect a `bs-config.json` or `bs-config.js` override file. Using lite-se
 Notamos que retorna un **200** el cual significa que la petición por GET al archivo principal fue satisfactoria.
 
 Ahora sólo queda que modifiques el index.html, lo guardes y verás como de inmediato el servidor actualiza tu navegador para ver los cambios actuales.
+
+### Instalando paquetería de BootStrap
+
+Para ello ejecutaremos el comando `npm install bootstrap@4.6 --save` , con el **@4.6** le indicamos la versión exacta con la que queremos trabajar, al ejecutar nos desplegará un mensaje que dice que depende de JQuery y Pooper.js por lo que procederemos a instalarlos.
+Con el comando `npm install jquery --save` instalamos y lo guardamos en dependencias. Harémos lo mismo con popper.js con el comando `npm install popper.js --save`
+De este modo ya habremos instalado BootStrap y todas sus dependencias, además lo habremos indicado con el JSON.
+
+Cuando termine de realizarse ese proceso siempre es buena practica ver como es que quedó nuestro **package.json** y verificar que todo va en orden, en este caso tendremos lo siguiente:
+
+
+```
+$ cat package.json
+{
+  "name": "node-js-fundamentals",
+  "version": "1.0.0",
+  "description": "Nuestro primer proyecto en Node JS",
+  "main": "index.html",
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/YanniMartinez/Node-JS-Fundamentals.git"
+  },
+  "author": "Yanni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YanniMartinez/Node-JS-Fundamentals/issues"
+  },
+  "homepage": "https://github.com/YanniMartinez/Node-JS-Fundamentals#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1"
+  }
+}
+```
+
+Notaremos que las dependencias fueron incluidas correctamente en nuestro package.json.
+
+### Configurando HTML para hacer uso de BootStrap
+
+Dirigete directamente a la página oficial de BootStrap y checa su [Documentación](https://getbootstrap.com/docs/4.6/getting-started/introduction/), en ella podremos encontrar mucho contenido interesante y generar cosas impresionantes, como primera intancia copia la plantilla genérica y pegala en tu **index.html** reemplazandolo por lo que se habia puesto con anterioridad.
+
+Podemos dejar la estructura que ya tiene, pero en este caso lo veremos con archivos que descargamos mediante el npm.
+
+Entonces en el HTML tendrás la siguiente modificación:
+
+```
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+```
+
+Y haremos lo mismo con JQuery, Popper y BootStrap al final antes de cerrar la etiqueta Body:
+
+```
+<script src="node_modules/jquery/dist/jquery.min.js"></script> 
+<script src="node_modules/popper.js/dist/popper.min.js"></script> 
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> 
+```
+
+Al final deberías tener una estructura como la siguiente:
+
+<div align="center"><img src="media/img/htmlBootStrap.jpg" width="80%"/></div>
+
+Con esto ya habremos cargado y configurado todo lo de BootStrap con componentes instalados directamente del npm.
