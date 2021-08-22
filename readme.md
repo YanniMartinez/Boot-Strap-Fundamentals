@@ -15,3 +15,79 @@
 6.    Sube los cambios al repositorio utilizando los comandos de GIT y revisa los log
 
 
+La respuesta al ejemplo anterior es:
+
+```
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+        <title>Guía de Hoteles</title>
+    </head>
+
+    <body>
+        <div class="jumbotron">
+            <h1>Hoteles</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <p>
+                        <h3>¿Cómo funciona?</h3>
+                        <p>Busca los hoteles de a cuerdo a tu preferencia</p>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <p>
+                        <h3>¿Donde puedo reservar?</h3>
+                        <p>Elige la ciudad que te interese y luego realiza la reserva con tus datos.</p>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <p>
+                        <h3>¿Cómo pago?</h3>
+                        <p>Utiliza tu tarjeta favorita</p>
+                    </p>
+                </div>
+            </div>
+            <hr>
+
+            <div class="row">
+                <div class="col-sm-3">
+                    <h4 >Hotel Barcelona</h4>
+                    <p>Hotel ubicado en pleno centro de barcelona a pocos metros de la playa</p>
+                    <button class="btn">Reservar</button>
+                </div>
+                <div class="col-sm-3">
+                    <h4>Hotel de CDMX</h4>
+                    <p>Hotel ubicado a poco pasos del monumento a la revolución</p>
+                    <button class="btn">Reservar</button>
+                </div>
+                <div class="col-sm-3">
+                    <h4>Hotel Lisboa</h4>
+                    <p>Hotel ubicado a pocos pasos del camino real<p>
+                    <button class="btn">Reservar</button>
+                </div>
+                <div class="col-sm-3">
+                    <h4>Hotel H</h4>
+                    <p>Hotel ubicado a 2 cuadras cerca del monumento de la iluminación</p>
+                    <button class="btn">Reservar</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="node_modules/jquery/dist/jquery.min.js"></script> 
+        <script src="node_modules/popper.js/dist/popper.min.js"></script> 
+         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> 
+    </body>
+
+</html>
+```
+
+Si modificamos las clases `row` por `d-flex` notaremos que existe un ligero cambio en los margenes, si incluimos más elementos veremos que todo se descuadra, es por ello que podemos poner `flex-wrap` que ajustará el contenido al tamaño del contenedor. Le dice que respete el ancho, cuando esto no se cumple lo que pasa es que acomoda los elementos en una siguiente línea. Por convención respeta el **Flex original**.
+
+Si empleamos la clase `flex-row-reverse` se verá el contenido de la columna pero en sentido inverso justo como su nombre lo dice.
