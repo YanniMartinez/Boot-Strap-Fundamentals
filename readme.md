@@ -102,5 +102,5 @@ Empleando el comando `flex-column` lo que hará es poner los elementos uno debaj
 | `flex-row-reverse` | Invierte el orden en la que se acomodan los elementos de la columna, es decir, el ultimo será el primero. |
 | `flex-column` | Ajusta los elementos uno debajo de otro |
 | `align-items-end` | Ajusta los elementos cerca del costado derecho |
-| `d-flex` |  |
+| `justify-content-between` | Rellenará el espacio que resta de la altura entre los elementos que existen |
 | `d-flex` |  |
