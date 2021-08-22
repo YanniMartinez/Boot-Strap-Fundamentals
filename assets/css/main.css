@@ -22,12 +22,13 @@ footer{
     
     Al agregar esta propiedad ya no es necesario especificar el ancho de la columna con bootstrap por lo que debemos removerla del html*/
 
-    padding: 2px 5px 2px 5px; /* Va en sentido horario, up, right, down, left */
-    margin-top: 10px;
+    padding: 15px 5px 2px 5px; /* Va en sentido horario, up, right, down, left */
+    margin-top: 20px;
+    margin-left: 30px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .btn-reserva{
     width: 100%; /* Le da el tamaño máximo */
     /* Mandandolo al fondo: */
-    
 }
