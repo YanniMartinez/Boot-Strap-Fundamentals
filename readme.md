@@ -91,3 +91,16 @@ La respuesta al ejemplo anterior es:
 Si modificamos las clases `row` por `d-flex` notaremos que existe un ligero cambio en los margenes, si incluimos más elementos veremos que todo se descuadra, es por ello que podemos poner `flex-wrap` que ajustará el contenido al tamaño del contenedor. Le dice que respete el ancho, cuando esto no se cumple lo que pasa es que acomoda los elementos en una siguiente línea. Por convención respeta el **Flex original**.
 
 Si empleamos la clase `flex-row-reverse` se verá el contenido de la columna pero en sentido inverso justo como su nombre lo dice.
+Empleando el comando `flex-column` lo que hará es poner los elementos uno debajo de otro.
+
+### Clases Flex
+
+| Clase | Acción |
+| --- | --- |
+| `d-flex` | Indica que será usado Flex en el diseño |
+| `flex-wrap` | Ajusta automáticamente el contenido en función del ancho que se tiene, si se excede entonces los otros elementos los coloca en la siguiente línea. |
+| `flex-row-reverse` | Invierte el orden en la que se acomodan los elementos de la columna, es decir, el ultimo será el primero. |
+| `flex-column` | Ajusta los elementos uno debajo de otro |
+| `align-items-end` | Ajusta los elementos cerca del costado derecho |
+| `d-flex` |  |
+| `d-flex` |  |

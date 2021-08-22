@@ -1,0 +1,11 @@
+.jumbotron{
+    background-color: yellow;
+    color: black;
+}
+
+footer{
+    padding: 10px 10px 0 10px;
+    background-color: yellow;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
