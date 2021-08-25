@@ -173,12 +173,33 @@ Por ejemplo: Elige tu producto > Confirma tus datos de pago > Indica domicilio d
 
 ## Implementando Navbar y BreadCrums
 
+El siguiente elemento hace referencia a un botón tipo hamburguesa que normalmente vemos en celulares cuando la barra del navegador se colapsa.
 
+```
+<button class="navbar-toggler" type="button" data-toggle="collapse">
+    <span class="navbar-toggler-icon"> </span>
+</button>
+```
+
+Listado de elementos importantes:
 
 | Elemento | Función |
 | --- | --- |
 | `<nav>` | Define un componente Nav |
+| `<ul>` | Lista desordenada |
+| `<li>` | Elemento de una lista |
 | `navbar-dark` | Indicará que el navbar tendrá un estilo obscuro y con ello letras blancas |
 | `bg-dark` | Indica que el fondo será obscuro |
 | `navbar-brand` | Define el primer elemento a la izquierda de todo el navegador |
+| `navbar-toggler` | Indica que el siguiente elemento será el que se muestre cuando se colapse el menú |
+| `navbar-toggler-icon` | Es un icono de hamburguesa ideal para desplegar en celulares o pantallas pequeñas |
+| `data-toggle="collapse"` | Indica la acción de colapso | 
+| `data-target="#navbarSupportedContent"` | Indica el contenido que desplegará, esto está en función de un id que se declara abajo |
+| `navbar-expand-md` | Indica que se muestren los elementos de la barra cuando el tamaño sea medium, si es menor, entonces se mostrará colapsado el menú | 
 | `fixed-top` | Indica que quede fijo en la parte superior |
+| `collapse` | Indica que el elemento está relacionado a un colapso |
+| `navbar-collapse` | Indica que será un elemento colapsable |
+| `mr-auto` | Indica que se tendrá un margen a la derecha automático |
+| `nav-item` | Indica que se trata de un item de la lista |
+| `active` | Indica que item se encuentra activo |
+| `nav-link` | Para que el elemento no se vea como en los hipervinculos azules y subrayados |
