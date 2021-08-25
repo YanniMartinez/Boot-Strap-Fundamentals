@@ -162,10 +162,6 @@ Por ejemplo: Libros > Computación > Lenguajes de programación > El lenguaje de
 * Basados en pasos de un proceso: Se indica los pasos que realizó el usuario hasta llegar al punto donde está parado.
 Por ejemplo: Elige tu producto > Confirma tus datos de pago > Indica domicilio de entrega
 
-
-
-
-
 | Elemento | Función |
 | --- | --- |
 | `nav bar` | Permite crear una barra de navegación. Normalmente muestra todas las opciones que tiene el visitante para ver más acerca del sitio. Normalmente se mantiene exactamente igual en todas las páginas del sitio y da enfoque en donde está parado el usuario(por ejemplo subrayando la ruta donde se ubica). En celulares suele colapsarse para no entorpecer el diseño de la web |
@@ -220,3 +216,42 @@ Generará una copia del index.html pero con el nombre about.html. Queda a la per
 Para ello quitamos todo lo que está ubicado en el div del contenedor y lo reemplazamos por un Span con texto [lorem](www.lipsum.com) ó mediante el atajo de VSC `lorem:300` o la cantidad que quieras de palabras.
 
 No hay que olvidar poner en el navbar cuando estamos posicionados en ese lugar mediante la clase `active`
+
+## Breadcrumbs
+
+Para declararlos es sencillo, sólo es necesario poner atributos como los siguientes:
+
+```
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">Home</li>
+    </ol>
+</nav>
+```
+
+Y para la página de about debería ir algo como lo siguiente:
+
+```
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item" aria-current="page"><a href="./index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Nosotros</li>
+    </ol>
+</nav>
+```
+
+| Elemento | Función |
+| --- | --- |
+| `<ol>` | Define una lista ordenada |
+| `aria-label="breadcrumb"` | Define que se tratará de un Breadcrumb |
+| `breadcrumb-item` | Define que se trata de un item de tipo breadcrumb |
+
+Finalmente, al termino de estos pasos se tendrá lo siguiente:
+
+* Index:
+
+<div align="center"><img src="media/img/index.png" width="70%"/></div>
+
+* About:
+
+<div align="center"><img src="media/img/about.png" width="70%"/></div>
