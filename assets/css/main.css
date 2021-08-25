@@ -33,3 +33,8 @@ footer{
     width: 100%; /* Le da el tamaño máximo */
     
 }
+
+
+.footer-address-icon{
+    padding-right: 10px;
+}
