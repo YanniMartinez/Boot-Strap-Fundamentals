@@ -181,3 +181,4 @@ Por ejemplo: Elige tu producto > Confirma tus datos de pago > Indica domicilio d
 | `navbar-dark` | Indicará que el navbar tendrá un estilo obscuro y con ello letras blancas |
 | `bg-dark` | Indica que el fondo será obscuro |
 | `navbar-brand` | Define el primer elemento a la izquierda de todo el navegador |
+| `fixed-top` | Indica que quede fijo en la parte superior |
