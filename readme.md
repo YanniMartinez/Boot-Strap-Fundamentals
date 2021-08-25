@@ -203,3 +203,20 @@ Listado de elementos importantes:
 | `nav-item` | Indica que se trata de un item de la lista |
 | `active` | Indica que item se encuentra activo |
 | `nav-link` | Para que el elemento no se vea como en los hipervinculos azules y subrayados |
+
+
+## Copiando un elemento mediante consola
+
+Para copiar un elemento sólo es necesario ejecutar el siguiente comando en la consola `cp nombreArchivo nombreArchivoCopia`
+
+El ejemplo para nuestro proyecto puede ser:
+
+```
+cp index.html about.html
+```
+
+Generará una copia del index.html pero con el nombre about.html. Queda a la perfección para nuestro proyecto porque permite duplicar rapidamente una página.
+
+Para ello quitamos todo lo que está ubicado en el div del contenedor y lo reemplazamos por un Span con texto [lorem](www.lipsum.com) ó mediante el atajo de VSC `lorem:300` o la cantidad que quieras de palabras.
+
+No hay que olvidar poner en el navbar cuando estamos posicionados en ese lugar mediante la clase `active`
