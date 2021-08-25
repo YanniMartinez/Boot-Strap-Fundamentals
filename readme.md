@@ -277,3 +277,22 @@ Para agregar un icono simplemente hay que seleccionar el `span` de cada icono y 
 El producto final se veria algo como lo siguiente:
 
 <div align="center"><img src="media/img/icons.png" width="70%"/></div>
+
+## Formularios
+
+Lo primero que haremos es crear una copia de about pero ahora llamado contacto, recordando que el comando a ejecutar seria el siguiente: `cp about.html contact.html`.
+
+| Elemento | Función |
+| --- | --- |
+| `<form>` | Define un formulario |
+| `form-row` | Da estilos a la columna para que se vea agradable con el formulario |
+| `form-group` | Indica que los elementos contenido formarán parte de un grupo del formulario |
+| `<label>` | Es una etiqueta, normalmente siempre lleva el atributo `for=""` y dentro de las comillas va el nombre del input al que irá relacionado |
+| `<input>` | Será un espacio en donde el usuario podrá ingresar datos. Siempre llevará el atributo `type` que hace referencia al tipo de entrada, `name` que es con el que se relaciona con su label y un `id` |
+| `placeholder=""` | Es el contenido que llevará la casilla del input, sin embargo sólo aparece al fondo y no afecta cuando escribe el usuario. Normalmente se usa como guia para que el usuario sepa que ingresar en esa casilla |
+| `form-control` | Es importante tenerlo para poder respetar el formato y estilos del formulario, si no se incluye, se nota algo extraño |
+| `<select>` | Como su nombre lo dice, nos permite seleccionar entre una serie de opciones |
+| `<option>` | Como su nombre lo dice, es una opción seleccionable del grupo |
+| `<textarea>` | Es una area en la que el usuario podrá digitar su mensaje |
+
+<div align="center"><img src="media/img/contact.png" width="70%"/></div>
