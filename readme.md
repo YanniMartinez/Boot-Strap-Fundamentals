@@ -103,4 +103,70 @@ Empleando el comando `flex-column` lo que hará es poner los elementos uno debaj
 | `flex-column` | Ajusta los elementos uno debajo de otro |
 | `align-items-end` | Ajusta los elementos cerca del costado derecho |
 | `justify-content-between` | Rellenará el espacio que resta de la altura entre los elementos que existen |
-| `d-flex` |  |
+
+##
+
+Uno de los aspecto más importantes es pensar en la **Navegabilidad** de nuesros clientes en nuestro sitio web.
+
+* Qué lugares visitar
+* Cómo vamos a ir
+* Cuanto tiempo vamos a estar en ese lugar
+
+Estos conceptos nos ayudarán a tener a un cliente satisfecho con la experiencia de usuario.
+
+## Mapa de sitio
+
+Tienen como objetivo 3 tipos de clientes:
+
+* Diseñadores
+* Visitantes humanos
+* Visitantes robots
+
+El mapa de sitio nos permite distribuir el trabajo entre el equipo y asignar por secciones al grupo de personas que trabajen sobre ese asunto.
+
+<div align="center"><img src="media/img/mapaSitio.png" width="70%"/></div>
+
+También permite tener un marco de referencia y control de trabajo.
+
+Es intuitivo para que la persona pueda encontrar lo que busca y explorar el sitio aprendiendo sobre lo que ofreces con total facilidad.
+
+Si el sitio no cumple con lo anterior es muy probable que el usuario se vaya y no permanezca mucho tiempo.
+
+La presentación del mapa del sitio se puede hacer mediante una barra de navegación, algunos a su vez utilizan los **Breadcrums** para ubicar al visitante dentro de la estructura del mapa del sitio en la que se encuentran.
+
+### Qué incluir en nuestro sitio
+
+* Logo del sitio
+* El click en el logo debe redirigir a la página principal
+* Los nombres de las secciones deben ser implicitos y en el lenguaje del visitante
+* Mostrar pocas secciones para no marear al visitante
+* Preferir nombres cortos.
+* Contrastar con un color la sección en donde se ubica el usuario
+* Si se incluye un `login` o un `logout` ubicarlo claramente en la barra de navegación
+
+Ejemplo, en la barra de navegación de bootstrap podemos notar todo el mapa de navegación a la izquierda y a la derecha el conjunto de acciones en el sistema. Un usuario nuevo puede comprender rápidamente que le ofrece el sistema unicamente viendo la barra de navegación.
+
+A continuación veremos un tipico Breadcrum, que nos despliega prácticamente toda la ruta y nos permite ir interactuando con las secciones que nos interesan:
+
+<div align="center"><img src="media/img/breadCrum.png" width="70%"/></div>
+
+Permite desplazarnos de forma jerarquica. Sólo es recomendable usarlo para sistemas en los que tenemos más de 2 secciones, es decir, tenemos subcategorias dentro de las categorias.
+
+Los **BreadCrumbs** tienen 3 tipos de uso:
+
+* Basados en la jerarquía o ubicación: Similar al ejemplo que se presentó anteriormente.
+
+* Basado en atributos: Se pasa de lo más abstrato a lo más particular de un producto o tema.
+Por ejemplo: Libros > Computación > Lenguajes de programación > El lenguaje de programación Java...
+
+* Basados en pasos de un proceso: Se indica los pasos que realizó el usuario hasta llegar al punto donde está parado.
+Por ejemplo: Elige tu producto > Confirma tus datos de pago > Indica domicilio de entrega
+
+
+
+
+
+| Elemento | Función |
+| --- | --- |
+| `nav bar` | Permite crear una barra de navegación. Normalmente muestra todas las opciones que tiene el visitante para ver más acerca del sitio. Normalmente se mantiene exactamente igual en todas las páginas del sitio y da enfoque en donde está parado el usuario(por ejemplo subrayando la ruta donde se ubica). En celulares suele colapsarse para no entorpecer el diseño de la web |
+| `BreadCrum` | Permite navegar mediante jerarquias en el sitio, indicando cada paso que tomó el usuario |
