@@ -170,3 +170,14 @@ Por ejemplo: Elige tu producto > Confirma tus datos de pago > Indica domicilio d
 | --- | --- |
 | `nav bar` | Permite crear una barra de navegación. Normalmente muestra todas las opciones que tiene el visitante para ver más acerca del sitio. Normalmente se mantiene exactamente igual en todas las páginas del sitio y da enfoque en donde está parado el usuario(por ejemplo subrayando la ruta donde se ubica). En celulares suele colapsarse para no entorpecer el diseño de la web |
 | `BreadCrum` | Permite navegar mediante jerarquias en el sitio, indicando cada paso que tomó el usuario |
+
+## Implementando Navbar y BreadCrums
+
+
+
+| Elemento | Función |
+| --- | --- |
+| `<nav>` | Define un componente Nav |
+| `navbar-dark` | Indicará que el navbar tendrá un estilo obscuro y con ello letras blancas |
+| `bg-dark` | Indica que el fondo será obscuro |
+| `navbar-brand` | Define el primer elemento a la izquierda de todo el navegador |
