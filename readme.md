@@ -255,3 +255,11 @@ Finalmente, al termino de estos pasos se tendrá lo siguiente:
 * About:
 
 <div align="center"><img src="media/img/about.png" width="70%"/></div>
+
+
+## Iconos de Bootstrap
+
+Manejo de iconos como fuentes: La ventaja de manejarlos como fuentes es que tenemos la posibilidad de manipular el color, el tamaño y demás como si fuera un texto dentro de un parrafo.
+
+Para ello instalaremos mediante `npm install open-iconic --save`
+
