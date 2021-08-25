@@ -263,3 +263,17 @@ Manejo de iconos como fuentes: La ventaja de manejarlos como fuentes es que tene
 
 Para ello instalaremos mediante `npm install open-iconic --save`
 
+Para agregar un icono simplemente hay que seleccionar el `span` de cada icono y colocarlo en donde queramos. Ejemplo:
+
+```
+<address>
+    <h3>Dirección</h3>
+    <p><span class="oi oi-home footer-address-icon"></span>Ciudad de México Av. Revolución.</p>
+    <p><span class="oi oi-phone footer-address-icon"></span>+52 55 123456789</p>
+    <p><span class="oi oi-inbox footer-address-icon"></span>contacto@ejemplo.com</p>
+</address>
+```
+
+El producto final se veria algo como lo siguiente:
+
+<div align="center"><img src="media/img/icons.png" width="70%"/></div>
