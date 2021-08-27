@@ -311,3 +311,6 @@ Para ello podemos hacer una copia de about y la llamamos prices. `cp about.html 
 | `<td>` | Indica que se trata de una columna |
 | `thead-dark` | Le da un estilo obscuro al encabezado |
 | `table-striped` | Hace una alternancia de color, uno blanco y otro un poco gris, es muy agradable a la vista |
+| `table-responsive` | Permite que la tabla sea responsive |
+
+Para hacer responsive una tabla sólo es necesario colocarla dentro de una etiqueta `div` la cual contenga la clase `table-responsive`, con ello lograremos que sea totalmente responsiva. Notaremos que por más elementos que tengamos siempre se mantendrá en el contenedor.
