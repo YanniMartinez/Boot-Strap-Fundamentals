@@ -334,3 +334,21 @@ Un card lo podemos identificar por 3 partes, un header, un body y un footer.
 | `img-fluid` | Es una clase para poder hacer responsive una imagen, en el caso del proyecto adapta la imagen al tamaño del contenedor. Si no colocaramos esta clase notariamos que el tamaño se desfasaría al cambiar el tamaño de la imagen |
 | `card-img-top` | Coloca la imagen en la parte superior |
 
+## Al final de este modulo 2
+
+El resultado debe verse como el siguiente:
+
+* Index
+<div align="center"><img src="media/img/fin-modulo2/index.png" width="70%"/></div>
+
+* Nosotros
+
+<div align="center"><img src="media/img/fin-modulo2/about.png" width="70%"/></div>
+
+* Precios
+
+<div align="center"><img src="media/img/fin-modulo2/prices.png" width="70%"/></div>
+
+* Contacto
+
+<div align="center"><img src="media/img/fin-modulo2/contact.png" width="70%"/></div>
