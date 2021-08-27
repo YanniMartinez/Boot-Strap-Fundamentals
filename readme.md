@@ -296,3 +296,18 @@ Lo primero que haremos es crear una copia de about pero ahora llamado contacto, 
 | `<textarea>` | Es una area en la que el usuario podrá digitar su mensaje |
 
 <div align="center"><img src="media/img/contact.png" width="70%"/></div>
+
+## Mostrar contenidos en Tablas
+
+Para ello podemos hacer una copia de about y la llamamos prices. `cp about.html prices.html` 
+
+| Elemento | Función |
+| --- | --- |
+| `<table>` | Define una tabla |
+| `<thead>` | Define el encabezado de una tabla |
+| `<th>` | Son elementos que conformarán el encabezado |
+| `<tbody>` | Define el cuerpo de una tabla |
+| `<tr>` | Indica que se trata de una fila |
+| `<td>` | Indica que se trata de una columna |
+| `thead-dark` | Le da un estilo obscuro al encabezado |
+| `table-striped` | Hace una alternancia de color, uno blanco y otro un poco gris, es muy agradable a la vista |
