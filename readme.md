@@ -326,3 +326,11 @@ Un card lo podemos identificar por 3 partes, un header, un body y un footer.
 | `card-title` | Como su nombre lo dice, está totalmente especializada para manejar titulos. Esto aplica margenes y paddings de forma automática |
 | `text-muted` | Coloca el color en un tono gris, sin tanto peso. |
 | `card-text` | Lo unico que hace es indicar que se trata de un texto |
+
+## Uso de imagenes en BootStrap
+
+| Elemento | Función |
+| --- | --- |
+| `img-fluid` | Es una clase para poder hacer responsive una imagen, en el caso del proyecto adapta la imagen al tamaño del contenedor. Si no colocaramos esta clase notariamos que el tamaño se desfasaría al cambiar el tamaño de la imagen |
+| `card-img-top` | Coloca la imagen en la parte superior |
+
