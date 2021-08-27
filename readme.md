@@ -314,3 +314,15 @@ Para ello podemos hacer una copia de about y la llamamos prices. `cp about.html 
 | `table-responsive` | Permite que la tabla sea responsive |
 
 Para hacer responsive una tabla sólo es necesario colocarla dentro de una etiqueta `div` la cual contenga la clase `table-responsive`, con ello lograremos que sea totalmente responsiva. Notaremos que por más elementos que tengamos siempre se mantendrá en el contenedor.
+
+## Uso de Cards en BootStrap 
+
+Un card lo podemos identificar por 3 partes, un header, un body y un footer.
+
+| Elemento | Función |
+| --- | --- |
+| `card` | Le añade un borde |
+| `card-body` | Le indica que se trata de un body |
+| `card-title` | Como su nombre lo dice, está totalmente especializada para manejar titulos. Esto aplica margenes y paddings de forma automática |
+| `text-muted` | Coloca el color en un tono gris, sin tanto peso. |
+| `card-text` | Lo unico que hace es indicar que se trata de un texto |

@@ -14,7 +14,7 @@ footer{
 /* Creando estilos para una clase card-hotel */
 .card-hotel{
     /* Aprovechando que son elementos flex también hay que declarar algo aquí */
-    flex: 1 150px; /* Con esta intrucción lo que le mandamos son 2 parametros: Para saber cuanto queremos que crezca el elemento
+    flex: 1 200px; /* Con esta intrucción lo que le mandamos son 2 parametros: Para saber cuanto queremos que crezca el elemento
     , de cuanto será el ancho.  
     Al mandarle 1, lo que le decimos es que la propiedad Flex-Grow se mantenga intacta, si le pusieramos 2 significa que usara
     hasta el doble de ancho
@@ -23,15 +23,14 @@ footer{
     
     Al agregar esta propiedad ya no es necesario especificar el ancho de la columna con bootstrap por lo que debemos removerla del html*/
 
-    padding: 15px 5px 2px 5px; /* Va en sentido horario, up, right, down, left */
     margin-top: 20px;
     margin-left: 30px;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); */
 }
 
 .btn-reserva{
     width: 100%; /* Le da el tamaño máximo */
-    
+    border-radius: 0%;
 }
 
 
