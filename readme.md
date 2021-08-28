@@ -381,4 +381,11 @@ Podemos pensar que primero se definen las pestañas y por otor lado en donde se 
 | `data-toggle="tab"` | Atributo de data en donde le especificamos que cumpla con el rol de tab. Con esto Bootstrap ya incluye el contenido de JS para que funcionen las pestañas. Lo que hace es vincular estas pestañas con el panel o el contenido |
 | `href="#compara"` | Importante poner el ID del panel con el que vamos a referenciar y que sea ese el contenido a desplegar. |
 | `tab-content` | Le indicamos que será un contenedor para una pestaña. Dentro del div que contenga esta clase pondremos un div por cada uno de los contenidos |
+| `tab-pane` | indica que será un panel |
+| `fade show` | Definen una pequeña animación de transición de pestañas |
+| `active` | Indica en donde está posicionado y además el valor por defecto |
+| `id="nombre"` | Debe ser el mismo id al que le estamos indicando en los `nav-link` es muy importante que coincidan para que esto funcione correctamente. |
+| `role="tabpanel"` | Como su nombre lo dice, indica que se trata de un panel de pestañas |
+| `aria-labelledby="compara-tab"` | Aquí debe ir el mismo nombre que le indicamos en el id del `nav-item` importante para que funcione |
+| `` |  |
 | `` |  |
