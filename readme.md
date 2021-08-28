@@ -399,3 +399,14 @@ El uso de pildoras nos permite hacer un comportamiento semejante al anterior de 
 * Pills
 
 <div align="center"><img src="media/img/modulo3/pills.png" width="70%"/></div>
+
+## Trabajando con Collapse
+
+Collapse como su nombre lo dice permite colapsar contenido, es decir, permite mostrar u ocultar según lo que necesites en tu desarrollo, el ejemplo que se aborda en este curso será presionar un botón para que nos despliegue contenido más detallado, por ejemplo una descripción de algun servicio o demás.
+
+Para poder manejar con este tipo de elementos lo primero que hay que hacer es definir botones que sean de tipo **collapse**, posteriormente a cada uno de los elementos que vamos a desplegar deberemos agregarle las clases `collapse multi-colapse` para poder hacer uso de ese elemento y ponerle un **id** para poder manejarlo.
+
+El `multiColapse` nos permite manipular diferentes valores al mismo tiempo y puedan acomodarse en función de lo que se presiona.
+
+Asegurate de colocar diferente valor de aria-controlls ya que este valor sirve para distinguir entre los distintos componente.
+Recordemos que en el `data-target` va el id del elemento que queremos desplegar.
