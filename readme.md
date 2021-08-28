@@ -364,5 +364,21 @@ complementaria. Básicamente, agregan texto con un formato especial a un element
 
 ## Barras de progreso
 
->Las barras de progreso, o progress bars, indican el avance de una operación en tiempo real. Veremos el componente que nos ofrece Bootstrap y las varias que tenemos para su uso. De todas formas, en la sección de Javascript profundizaremos sobre su uso ya que debemos utilizar un script JS para mantener actualizado el avance de la barra de acuerdo al progreso de la acción. Para que se entienda mejor, debemos monitorear la operación observando el grado de avance y con ese dato, actualizar la barra de progreso de forma acorde.  Básicamente, están formadas por dos componentes: una que indica el contexto de la barra y otro dentro de este que ocupa el rol de la barra en sí.Tenemos un contenedor con el elemento div y la clase progress. Dentro de este, tenemos otro div con la clase progress-bar. El elemento interior tiene varios atributos, pero el más importante es el valor del width donde indicamos el nivel de progreso (lo que debe ocupar el azul de la barra).  Si incluimos un texto antes del cierre del div de la barra, ese texto se mostrará por defecto en color blanco y centrado en el ancho del progreso de la barra.
+> Las barras de progreso, o progress bars, indican el avance de una operación en tiempo real. Veremos el componente que nos ofrece Bootstrap y las varias que tenemos para su uso. De todas formas, en la sección de Javascript profundizaremos sobre su uso ya que debemos utilizar un script JS para mantener actualizado el avance de la barra de acuerdo al progreso de la acción. Para que se entienda mejor, debemos monitorear la operación observando el grado de avance y con ese dato, actualizar la barra de progreso de forma acorde.  Básicamente, están formadas por dos componentes: una que indica el contexto de la barra y otro dentro de este que ocupa el rol de la barra en sí.Tenemos un contenedor con el elemento div y la clase progress. Dentro de este, tenemos otro div con la clase progress-bar. El elemento interior tiene varios atributos, pero el más importante es el valor del width donde indicamos el nivel de progreso lo que debe ocupar el azul de la barra.  Si incluimos un texto antes del cierre del div de la barra, ese texto se mostrará por defecto en color blanco y centrado en el ancho del progreso de la barra.
 
+
+## Trabajando con Tabs y Pills
+
+Podemos pensar que primero se definen las pestañas y por otor lado en donde se define todo el contenido o elementos a desplegar
+
+| Elemento | Función |
+| --- | --- |
+| `nav-tabs` | Define que se tratará de tabs o pestañas |
+| `id="myTab"` | Sólo le asigna el nombre de su identificador |
+| `role="tablist"` | Le indica que se tratará de de una lista de pestañas |
+| `nav-link` | Hace referencia a que este elemento estára enlazado a otro |
+| `id="compara-tab"` | Es de buena práctica, el poner en el nombre a que tipo de elemento está viculado, así podremos darnos cuenta que este elemento está referenciado a una pestaña por el `tab` |
+| `data-toggle="tab"` | Atributo de data en donde le especificamos que cumpla con el rol de tab. Con esto Bootstrap ya incluye el contenido de JS para que funcionen las pestañas. Lo que hace es vincular estas pestañas con el panel o el contenido |
+| `href="#compara"` | Importante poner el ID del panel con el que vamos a referenciar y que sea ese el contenido a desplegar. |
+| `tab-content` | Le indicamos que será un contenedor para una pestaña. Dentro del div que contenga esta clase pondremos un div por cada uno de los contenidos |
+| `` |  |
