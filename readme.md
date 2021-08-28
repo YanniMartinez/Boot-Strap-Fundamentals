@@ -387,5 +387,15 @@ Podemos pensar que primero se definen las pestañas y por otor lado en donde se 
 | `id="nombre"` | Debe ser el mismo id al que le estamos indicando en los `nav-link` es muy importante que coincidan para que esto funcione correctamente. |
 | `role="tabpanel"` | Como su nombre lo dice, indica que se trata de un panel de pestañas |
 | `aria-labelledby="compara-tab"` | Aquí debe ir el mismo nombre que le indicamos en el id del `nav-item` importante para que funcione |
-| `` |  |
-| `` |  |
+
+## Uso de Pills
+
+El uso de pildoras nos permite hacer un comportamiento semejante al anterior de los tabs. Lo unico que hay que hacer es reemplazar ~~nav-tab~~ por un `nav-pills` y en `data-toggle` decirle que son pills `data-toggle="pill"`. La unica diferencia es el estilo que hay entre el diseño de las pestañas, a continuación verás el ejemplo de cual es la diferencia entre estos:
+
+* Tabs
+
+<div align="center"><img src="media/img/modulo3/tabs.png" width="70%"/></div>
+
+* Pills
+
+<div align="center"><img src="media/img/modulo3/pills.png" width="70%"/></div>
