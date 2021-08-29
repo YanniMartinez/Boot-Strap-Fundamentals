@@ -570,6 +570,26 @@ Para el final del modulo 3, el proyecto deberá tener una apariencia semejante a
 
 ## Modulo 4
 
+>Jquery es una librería Javascript muy liviana que tiene como misión simplicar el uso de JavaScript, particularmente, en la gestión del DOM y las llamadas AJAX.Podemos pensarlas como las interacciones asíncronas con el servidor. El DOM, domain object model, es el conjunto estándar de objetos que nos permiten representar documentos HTML, XML y XHTML
+
+<div align="center"><img src="media/img/modulo4/intro.png" width="70%"/></div>
+
+>Cuando decimos que nos permite gestionar el DOM, hablamos de agregar componentes html, 
+acciones sobre los componentes, como pueden ser los clicks o doble clicks, suscribirnos a eventos o  directamente manipular cualquier componente cambiando sus clases, estilos, contenido, etc. De  esta forma, podemos dotar de dinamismo nuestra página. Pensemos en un div al cual podremos  agregarle fotos o imágenes de acuerdo al resultado de una consulta que haga el usuario.  
+
+>Jquery es una librería de Javascript y escrito en este lenguaje. Lo que nos aporta es una capa de abstracción para que  lidiemos con estas tareas en un nivel más alto y hablemos de estas tareas en nivel más cercano a  nuestro lenguaje. A esto llamamos simplificación. En vez de explicar con muchas operaciones el  hecho de cambiar una clase para un botón, directamente usamos los métodos de JQuery para  hacerlo que resultan en algo más intuitivo para el programador. Podemos pensar en nivel base que sería JavaScript y por encima de este, Jquery.  
+
+> Sintaxis Jquery 
+>La estructura de toda instrucción Jquery está definida por el signo `$`, seguida por un selector HTML y luego por una acción. Veamos un ejemplo: `$(“#btn_upload”).hide();`
+ 
+>El signo $ referencia a Jquery y lo define. Entre paréntesis indicamos el selector o query, que tiene por consecuencia seleccionar todos los elementos del DOM que aplicar al criterio del selector. Por último, la acción, que en este caso es el método hide() y aplica siempre a todos los elementos seleccionados. 
+
+<div align="center"><img src="media/img/modulo4/sintaxis-jquery.png" width="70%"/></div>
+
+<div align="center"><img src="media/img/modulo4/facilidad-jquery.png" width="70%"/></div>
+
+<div align="center"><img src="media/img/modulo4/DOM.png" width="70%"/></div>
+
 ## Conceptos Básicos de JQuery
 
 Las opciones de una elemento las solemos definir en un formato JSON, por ejemplo: `$('#myModal').modal(options)`
@@ -623,4 +643,4 @@ $("#contacto").on("show.bs.modal", function(e){
 });
 ```
 
-Otra cosa que podemos hacer con el botón es desactivarlo.
+Otra cosa que podemos hacer con el botón es desactivarlo mediante la instrucción `$("#contactoBtn").prop("disabled",true);` y cuando queramos activarlo puede ser con la instrucción `$("#contactoBtn").prop("disabled",false);`

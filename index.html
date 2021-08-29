@@ -286,6 +286,7 @@
                 });
                 $("#contacto").on("hidden.bs.modal", function(e){
                     console.log("El modal se ocultó");
+                    $("#contactoBtn").prop("disabled",false);
                 })
             })
         </script>
