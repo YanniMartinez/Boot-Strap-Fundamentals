@@ -461,10 +461,14 @@ Si se presta atención se ve que existe un div principal que tiene la clase `mod
 
 En este caso primero declaramos el modal y despues de ello lo accionamos mediante un botón.
 
+Para activarlo es necesario poner en un botón el atributo `data-toggle="modal"`
+
 | Elemento | Función |
 | --- | --- |
 | `modal fade` | Define el tipo de animación que usará para desplegar el elemento, en este caso es una aparición suave. Es muy importante usar la clase modal dado que estamos hablando de ello |
 | `modal-dialog` | Define el tamaño del dialogo en una ventana |
 | `modal-content` | Establece estilos y margenes para que el contenido se vea de la mejor manera |
-| `modal-header` | Como su nombre lo dice, se trata del encabezado
+| `modal-header` | Como su nombre lo dice, se trata del encabezado |
 | `modal-body` | Como su nombre lo dice, es el apartado en el que se define el cuerpo del modal |
+| `data-toggle="modal"` | Indica que se trata de un atributo para el manejo de un modal |
+| `` | |
