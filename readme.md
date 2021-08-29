@@ -507,3 +507,13 @@ Para ello igual necesitamos de un script para activarlos por lo que podemos incl
 
 Una cosa muy importante a considerar es que un popover generalmente se activa al hacer **click** o mediante el evento mouseover que detecta cuando el mouse se posiciona en ese sitio.
 En este caso será implementado en el botón de reservar.
+
+## Carousel
+
+Carrucel implementado con BootStrap, es un elemento muy util para estar mostrando productos destacados y demás, al tener una animación llama la atención, el sitio estrella para usar este componente es para destacar articulos de gran relevancia. Tiene distintos estilos, los más claros es cuando le incluimos botones para poder estár cambiando entre un elemento y otro.
+
+Para implementar este elemento es necesario declararle un identificador para cuando definamos controles. Estos controles siempre van a aplicar sobre un componente.
+
+Tambien es necesario agregarle las clases `carousel slide` para indicarle que será un carrucel. También necesitamos ponerle un `data-ride="carousel"` para hacerle saber al elemento que estará deslizando el contenido.
+
+Posteriormente todos los items deberán estar contenidos en un elemento div que tenga la clase `carousel-inner`, posteriormente cada elemento deberá tener la clase `carousel-item` haciendo alusión a que se trata de un elemento del carrucel, además siempre debe haber sólo 1 que contenga la clase `active`, si no la incluimos entonces el carrucel no funcionará. Si agregamos imagenes, lo que podemos hacer es incluir las clases `d-block w-100` para que el navegador no autoajuste las imagenes a su tamaño.
