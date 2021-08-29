@@ -585,3 +585,39 @@ BootStrap maneja conceptos de verbos en ingles en la declaración de estos méto
 `show.bs.modal` cuando el modal acaba de abrirse y el `shown.bs.modal` cuando el modal recién acaba de cerrarse.
 
 El script se vería de la siguiente manera:
+```
+$(function(){
+    $("[data-toggle='tooltip']").tooltip();
+    $("[data-toggle='popover']").popover();
+    $('.carousel').carousel({
+        interval:2000
+    });
+
+    /* Eventos */
+    $("#contacto").on("show.bs.modal", function(e){
+        console.log("El modal se está mostrando");
+    });
+    $("#contacto").on("shown.bs.modal", function(e){
+        console.log("El modal se mostró");
+    });
+    $("#contacto").on("hiden.bs.modal", function(e){
+        console.log("El modal se oculta");
+    });
+    $("#contacto").on("hidden.bs.modal", function(e){
+        console.log("El modal se ocultó");
+    })
+})
+```
+
+Viendo un uso práctico de estos eventos, lo que se hará es cambiar de color el botón. Por ejemplo, esto nos sirve para guiar al usuario a saber si ese hotel ya lo revisó y demás.
+Si implementamos el cambiar de color cuando abra el modal podemos hacerlo de la siguiente manera en la que eliminamos la clase del color y le agregamos la que queremos.
+
+```
+$("#contacto").on("show.bs.modal", function(e){
+    console.log("El modal se está mostrando");
+
+    $("#contactoBtn").removeClass("btn-outline-success");
+    $("#contactoBtn").addClass("btn-outline-danger");
+});
+```
+
