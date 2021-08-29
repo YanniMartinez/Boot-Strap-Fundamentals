@@ -553,3 +553,17 @@ $('.carousel').carousel({
     interval:2000
 })
 ```
+
+## Fin modulo 3
+
+Para el final del modulo 3, el proyecto deberá tener una apariencia semejante a lo siguiente:
+
+* Index:
+
+<div align="center"><img src="media/img/modulo3/index.png" width="70%"/></div>
+
+* Prices:
+
+<div align="center"><img src="media/img/modulo3/prices-tabs.png" width="70%"/></div>
+
+<div align="center"><img src="media/img/modulo3/prices-cards.png" width="70%"/></div>
