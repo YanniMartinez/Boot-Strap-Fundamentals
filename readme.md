@@ -419,3 +419,52 @@ Recordemos que en el `data-target` va el id del elemento que queremos desplegar.
 | `collapse show` | Indica que el contenido ya se encuentre desplegado, permite mostrar contenido desde un inicio. |
 
 <div align="center"><img src="media/img/modulo3/accordion.png" width="70%"/></div>
+
+## Uso de Modal
+
+Permite desplegar información de completo interés, le da un peso muy importante a la información dado que capta completamene la información del usuario, el modal puede declararse en cualquier sitio del HTML, sin embargo, se aconseja colocarlo hasta el final para evitar confusiones o errores.
+
+Su codigo de uso fue el siguiente:
+
+```
+<div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Contacto con el hotel</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <form action="">
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Tu email: </label>
+                        <input type="text" name="recipient-name" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">Mensaje</label>
+                        <textarea class="form-control" name="message-text" id="message-text" cols="30" rows="10"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success">Enviar</button>
+            </div>
+        </div>
+    </div>
+</div>
+```
+
+Si se presta atención se ve que existe un div principal que tiene la clase `modal fade` que define la animación.
+
+En este caso primero declaramos el modal y despues de ello lo accionamos mediante un botón.
+
+| Elemento | Función |
+| --- | --- |
+| `modal fade` | Define el tipo de animación que usará para desplegar el elemento, en este caso es una aparición suave. Es muy importante usar la clase modal dado que estamos hablando de ello |
+| `modal-dialog` | Define el tamaño del dialogo en una ventana |
+| `modal-content` | Establece estilos y margenes para que el contenido se vea de la mejor manera |
+| `modal-header` | Como su nombre lo dice, se trata del encabezado
+| `modal-body` | Como su nombre lo dice, es el apartado en el que se define el cuerpo del modal |
