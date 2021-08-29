@@ -517,3 +517,39 @@ Para implementar este elemento es necesario declararle un identificador para cua
 Tambien es necesario agregarle las clases `carousel slide` para indicarle que será un carrucel. También necesitamos ponerle un `data-ride="carousel"` para hacerle saber al elemento que estará deslizando el contenido.
 
 Posteriormente todos los items deberán estar contenidos en un elemento div que tenga la clase `carousel-inner`, posteriormente cada elemento deberá tener la clase `carousel-item` haciendo alusión a que se trata de un elemento del carrucel, además siempre debe haber sólo 1 que contenga la clase `active`, si no la incluimos entonces el carrucel no funcionará. Si agregamos imagenes, lo que podemos hacer es incluir las clases `d-block w-100` para que el navegador no autoajuste las imagenes a su tamaño.
+
+* Agregando botones:
+
+Sólo es necesario definir las siguientes lineas de código:
+
+```
+<a class="carousel-item-prev" href="#carouselControl" role="button" data-slide="prev">
+    <span class="carousel-item-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+</a>
+<a class="carousel-item-next" href="#carouselControl" role="button" data-slide="next">
+    <span class="carousel-item-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Siguiente</span>
+</a>
+```
+
+Hay que tener en cuenta que este tipo de clases pueden cambiar entre una versión y otra. En el curso se implementaban esas clases, sin embargo, en bootstrap 4.6 cambiaron un poco a lo siguiente:
+
+```
+<a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+</a>
+<a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Siguiente</span>
+</a>
+```
+
+Por ultimo veremos como **modificar el intervalo** que existe entre una transición y otra mediante un script el cual es el siguiente, en donde se especifica el tiempo en el que cambia de un Slide a otro:
+
+```
+$('.carousel').carousel({
+    interval:2000
+})
+```

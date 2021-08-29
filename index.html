@@ -85,6 +85,15 @@
                         <img class="d-block w-100" src="https://images.unsplash.com/photo-1585418694458-dc80a5c20294?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Primer Slide">
                     </div>
                 </div>
+                <!-- Agregando botones para controlar el carrucel -->
+                <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
             </div>
             
             <hr>
@@ -245,6 +254,9 @@
             $(function(){
                 $("[data-toggle='tooltip']").tooltip();
                 $("[data-toggle='popover']").popover();
+                $('.carousel').carousel({
+                    interval:2000
+                })
             })
         </script>
     </body>
