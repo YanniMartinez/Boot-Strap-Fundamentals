@@ -491,3 +491,16 @@ Sin embargo estas acciones aún no son suficientes para activar el tooltip, para
 Al hacer esto ya tendremos el tooltip activado para que cuando el usuario ponga el cursor encima del titulo lo muestre. 
 Lo que hace el script es buscar todos los elementos que tengan la propiedad `data-toggle='tooltip'` con el valor de tooltip y permite activar esa ayuda.
 Son muy utiles para presentarle al usuario información relevante como ayuda, orientación o demás que creamos importante. Normalmente son encontrados en formularios para auxiliar al usuario sobre que datos debe ingresar o como es que se espera el formato, tiene usos muy versatiles.
+
+## Usando Popovers
+
+Para ello igual necesitamos de un script para activarlos por lo que podemos incluirlo dentro del mismo scrip pasado sólo que ahora le añadimos una instrucción extra:
+
+```
+<script>
+    $(function(){
+        $("[data-toggle='tooltip']").tooltip();
+        $("[data-toggle='popover']").popover();
+    })
+</script>
+```
