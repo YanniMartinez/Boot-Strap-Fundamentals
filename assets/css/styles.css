@@ -1,8 +1,12 @@
 @charset "UTF-8";
+/* Definición de variables */
+/* Definición de Mixin */
 .jumbotron {
   background-color: #f5e642;
   color: black;
-  margin-top: 50px; }
+  /* margin-top: 50px; Reemplazamos esto por el Mixin */
+  margin-top: 50px;
+  margin-bottom: 10px; }
 
 .img-landing {
   width: 100%;
@@ -19,8 +23,8 @@
 footer {
   padding: 10px 10px 0 10px;
   background-color: #f5e642;
-  margin-bottom: 0px;
-  margin-top: 20px; }
+  margin-top: 20px;
+  margin-bottom: 0px; }
 
 /* Creando estilos para una clase card-hotel */
 .card-hotel {
@@ -35,6 +39,7 @@ footer {
     
     Al agregar esta propiedad ya no es necesario especificar el ancho de la columna con bootstrap por lo que debemos removerla del html*/
   margin-top: 20px;
+  margin-bottom: 0px;
   margin-left: 15px;
   margin-right: 15px;
   /* box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); */ }

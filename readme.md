@@ -684,3 +684,22 @@ Básicamente nuestro compilador encuentra las variables que hemos definido y las
 | Elemento | Función |
 | --- | --- |
 | `Variables` | En Sass las variables se definen con el signo de `$` |
+
+**Definiendo un Mixin:**
+
+Los Mixin nos permite trabajar con los margenes y es muy sencillo, es como si se tratara de una pequeña función y se puede declarar de la siguiente manera.
+
+```
+@mixin margenes($top, $bottom){
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+```
+
+y para ser usado unicamente se manda a llamar de la siguiente manera:
+
+```
+@include margenes(50px, 0px);
+```
+
+El usar Sass nos permite importar archivos, de esta manera podemos tener un orden extremadamente bueno, automatizar cosas y demás.
