@@ -146,18 +146,53 @@
                 </div>
                 <!-- Pestaña de tarjetas -->
                 <div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
-                    <div class="d-flex justify-content-center">
-                        <div class="card" style="width: 18rem;">
-                            <div class="card-header" style="background-color: yellow;">
-                                Tarjetas aceptadas
+                    <div class="accordion" id="accordionTarjetas"> <!-- Es muy importante declarar su id -->
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0"> <!-- Muy importante declarar este botón para expandir y encoger -->
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseBasica" aria-expanded="true" aria-controls="collapseBasica">
+                                        Tarjeta Básica
+                                    </button>
+                                </h5>
                             </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Tarjeta de debito</li>
-                                <li class="list-group-item">Tarjeta de credito</li>
-                                <li class="list-group-item">Tarjeta de ahorro</li>
-                            </ul>
+                            <div id="collapseBasica" class="collapse " aria-labelledby="headingOne" data-parent="#accordionTarjetas"> <!-- Pondriamos en clases class= "collapse show" para desplegar desde un inicio -->
+                                <div class="card-body">
+                                    Puedes reservar en 3 cuotas sin interés.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0"> <!-- Muy importante declarar este botón para expandir y encoger -->
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseDebito" aria-expanded="true" aria-controls="collapseDebito">
+                                        Tarjeta Debito
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseDebito" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionTarjetas">
+                                <div class="card-body">
+                                    Puedes reservar en 6 meses sin interés.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingThird">
+                                <h5 class="mb-0"> <!-- Muy importante declarar este botón para expandir y encoger -->
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseVIP" aria-expanded="true" aria-controls="collapseVIP">
+                                        Tarjeta Debito
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseVIP" class="collapse" aria-labelledby="headingThrid" data-parent="#accordionTarjetas">
+                                <div class="card-body">
+                                    Puedes reservar en 12 meses sin interés. Al llegar recibirá una canasta de obsequios, se le dará un acceso diario al spa y al gimnasio.
+                                </div>
+                            </div>
                         </div>
                     </div>
+
                 </div>
                 <!-- Pestaña de comentarios -->
                 <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">

@@ -410,3 +410,12 @@ El `multiColapse` nos permite manipular diferentes valores al mismo tiempo y pue
 
 Asegurate de colocar diferente valor de aria-controlls ya que este valor sirve para distinguir entre los distintos componente.
 Recordemos que en el `data-target` va el id del elemento que queremos desplegar.
+
+## Usando Accordion
+
+| Elemento | Función |
+| --- | --- |
+| `accordion` | Define que se tratará de un acordión |
+| `collapse show` | Indica que el contenido ya se encuentre desplegado, permite mostrar contenido desde un inicio. |
+
+<div align="center"><img src="media/img/modulo3/accordion.png" width="70%"/></div>
