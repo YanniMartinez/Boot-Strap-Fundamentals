@@ -9,6 +9,11 @@
     height: 300px;
 }
 
+.style-img-carousel{
+    width: 80%;
+    height: 400px;
+}
+
 footer{
     padding: 10px 10px 0 10px;
     background-color: yellow;
