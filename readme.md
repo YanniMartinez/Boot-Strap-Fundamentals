@@ -567,3 +567,21 @@ Para el final del modulo 3, el proyecto deberá tener una apariencia semejante a
 <div align="center"><img src="media/img/modulo3/prices-tabs.png" width="70%"/></div>
 
 <div align="center"><img src="media/img/modulo3/prices-cards.png" width="70%"/></div>
+
+## Conceptos Básicos de JQuery
+
+Las opciones de una elemento las solemos definir en un formato JSON, por ejemplo: `$('#myModal').modal(options)`
+
+Muchos de los elementos de BootStrap ya contienen métodos para realizar acciones en especifico. Por ejemplo `$('#myModal').modal(toggle)` recordemos que el toggle lo que nos dice es que si está mostrado que se oculte y se está oculto que se muestre.
+
+Y también tienen eventos que suelen ser mensajes que se disparan automaticamente, en el caso de método nosotros mediante un script le indicaremos que hacer y en el evento es algo que siempre pasará y podemos modificarlo a nuestro gusto.
+
+## Uso de eventos
+
+En este caso se elegirá un modal para ver un poco más clara la funcionalidad de un evento. Para ello le declararemos un id contacto al botón del modal. Y mandar a llamar el evento, en este caso usaremos el siguiente `show.bs.modal` que se ejecuta de inmediato cuando el modal el abierto o desplegado, este evento es ideal para autocompletar campos de un formulario o algo semejante.
+**Nota:** El **ON** siempre lo vamos a usar dentro de JQuery para suscribir eventos **siempre** 
+BootStrap maneja conceptos de verbos en ingles en la declaración de estos métodos, por ejemplo usa los infinitivo cuando los verbos se inician o están en desarrollo y el participio cuando acaban de terminar por ejemplo:
+
+`show.bs.modal` cuando el modal acaba de abrirse y el `shown.bs.modal` cuando el modal recién acaba de cerrarse.
+
+El script se vería de la siguiente manera:
