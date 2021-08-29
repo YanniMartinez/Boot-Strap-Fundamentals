@@ -568,6 +568,8 @@ Para el final del modulo 3, el proyecto deberá tener una apariencia semejante a
 
 <div align="center"><img src="media/img/modulo3/prices-cards.png" width="70%"/></div>
 
+## Modulo 4
+
 ## Conceptos Básicos de JQuery
 
 Las opciones de una elemento las solemos definir en un formato JSON, por ejemplo: `$('#myModal').modal(options)`
@@ -621,3 +623,4 @@ $("#contacto").on("show.bs.modal", function(e){
 });
 ```
 
+Otra cosa que podemos hacer con el botón es desactivarlo.

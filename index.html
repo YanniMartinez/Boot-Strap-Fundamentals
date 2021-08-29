@@ -273,9 +273,10 @@
                 /* Eventos */
                 $("#contacto").on("show.bs.modal", function(e){
                     console.log("El modal se está mostrando");
-
+                
                     $("#contactoBtn").removeClass("btn-outline-success");
                     $("#contactoBtn").addClass("btn-outline-danger");
+                    $("#contactoBtn").prop("disabled",true);
                 });
                 $("#contacto").on("shown.bs.modal", function(e){
                     console.log("El modal se mostró");
