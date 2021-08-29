@@ -474,3 +474,20 @@ Es importante saber que dentro del modal es posible incluir ualquier código HTM
 | `modal-body` | Como su nombre lo dice, es el apartado en el que se define el cuerpo del modal |
 | `data-toggle="modal"` | Indica que se trata de un atributo para el manejo de un modal |
 | `data-target="#contacto"` | Que hará referencia al id del contenido modal |
+
+## Tooltips
+
+El siguiente atributo `data-placement="top"` indica la posición que tendrá en el elemento. Y le definimos un titulo mediante `title="Las primeras reservas cuentan con spa doble durante la instancia sin costo adicional!"`
+Sin embargo estas acciones aún no son suficientes para activar el tooltip, para ello debemos declarar un script, porque por default no se activa, para ello crearemos un script como el siguiente:
+
+```
+<script>
+    $(function(){
+        $("[data-toggle='tooltip']").tooltip();
+    })
+</script>
+```
+
+Al hacer esto ya tendremos el tooltip activado para que cuando el usuario ponga el cursor encima del titulo lo muestre. 
+Lo que hace el script es buscar todos los elementos que tengan la propiedad `data-toggle='tooltip'` con el valor de tooltip y permite activar esa ayuda.
+Son muy utiles para presentarle al usuario información relevante como ayuda, orientación o demás que creamos importante. Normalmente son encontrados en formularios para auxiliar al usuario sobre que datos debe ingresar o como es que se espera el formato, tiene usos muy versatiles.
