@@ -286,6 +286,8 @@
                 });
                 $("#contacto").on("hidden.bs.modal", function(e){
                     console.log("El modal se ocultó");
+                    $("#contactoBtn").removeClass("btn-outline-danger");
+                    $("#contactoBtn").addClass("btn-outline-success");
                     $("#contactoBtn").prop("disabled",false);
                 })
             })
