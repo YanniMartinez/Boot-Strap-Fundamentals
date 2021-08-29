@@ -166,7 +166,7 @@
                         <button class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
                     </div>
                     <div>
-                        <button class="btn btn-primary btn-reserva"><span class="oi oi-plus "></span> Reservar</button>
+                        <button class="btn btn-primary btn-reserva" data-toggle="popover" title="Promociones" data-content="Consulta las promociones vigentes">Reservar</button>
                     </div>
                 </div>
             </div>
@@ -226,11 +226,12 @@
         </footer>
 
         <script src="node_modules/jquery/dist/jquery.min.js"></script> 
-        <script src="node_modules/popper.js/dist/popper.min.js"></script> 
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script> 
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> 
         <script>
             $(function(){
                 $("[data-toggle='tooltip']").tooltip();
+                $("[data-toggle='popover']").popover();
             })
         </script>
     </body>

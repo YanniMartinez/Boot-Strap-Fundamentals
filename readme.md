@@ -504,3 +504,6 @@ Para ello igual necesitamos de un script para activarlos por lo que podemos incl
     })
 </script>
 ```
+
+Una cosa muy importante a considerar es que un popover generalmente se activa al hacer **click** o mediante el evento mouseover que detecta cuando el mouse se posiciona en ese sitio.
+En este caso será implementado en el botón de reservar.
