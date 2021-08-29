@@ -1,0 +1,61 @@
+$yellow: #f5e642 ;
+
+.jumbotron{
+    background-color: $yellow;
+    color: black;
+    margin-top: 50px;
+}
+
+.img-landing{
+    width: 100%;
+    height: 300px;
+}
+
+.style-img-carousel{
+    width: 80%;
+    height: 400px;
+}
+
+.style-img-card{
+    width: 100%;
+    height: 200px;
+}
+
+footer{
+    padding: 10px 10px 0 10px;
+    background-color: $yellow;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+/* Creando estilos para una clase card-hotel */
+.card-hotel{
+    /* Aprovechando que son elementos flex también hay que declarar algo aquí */
+    flex: 1 200px; /* Con esta intrucción lo que le mandamos son 2 parametros: Para saber cuanto queremos que crezca el elemento
+    , de cuanto será el ancho.  
+    Al mandarle 1, lo que le decimos es que la propiedad Flex-Grow se mantenga intacta, si le pusieramos 2 significa que usara
+    hasta el doble de ancho
+    
+    La otra propiedad es Flex-basis especifica cual es el ancho definido
+    
+    Al agregar esta propiedad ya no es necesario especificar el ancho de la columna con bootstrap por lo que debemos removerla del html*/
+
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    /* box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); */
+}
+
+.btn-reserva{
+    width: 100%; /* Le da el tamaño máximo */
+    border-radius: 0%;
+}
+
+
+.footer-address-icon{
+    padding-right: 10px;
+}
+
+.tab-content{
+    padding-top: 10px;
+}

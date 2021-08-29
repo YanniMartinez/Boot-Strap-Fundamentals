@@ -655,10 +655,32 @@ Para ello primero debemos instalar **Saas** con el comando `npm install sass --s
 
 La otra alternativa para hacer la instalación y es la que se verá en este proyecto es con: `npm install node-sass --save-dev`, esto es una instalación de node-sass que nos permite instalar **Sass** en node, nos brindará una consola en la que podremos compilar el archivo y obtener un archivo `.CSS`. Para comprobar que se instaló correctamente podemos ir al archivo `package.json` y comprobar que en dependencias de desarrollo tenemos `node-sass:"version"`. Lo pusimos en Dev porque en cuando pasemos a un ambiente de producción no mandaremos los archivos Sass, sino los archivos .CSS, es por ello que no es necesario ponerlo dentro de las dependencias del proyectos que quedarán como realmente productivas.
 
-Lo siguiente que vamos a hacer es incluir una tarea que nos va a servir para indicarle al compilador de Sass que genere el archivo CSS `"scss":"node-sass -o css/ css/"`, explicando paso a paso:
+Lo siguiente que vamos a hacer es incluir una tarea que nos va a servir para indicarle al compilador de Sass que genere el archivo CSS `"scss":"node-sass -o assets/css/ assets/css/"`, explicando paso a paso:
 
 * `node-sass` es el nombre de la herramienta.
 * `-o` de output.
 * `css/` es la fuente donde va a buscar todo lo que sea **scss**.
 * `css/` le dice que el output lo genere en la misma carpeta.
 
+Lo siguiente a hacer es generar un archivo llamado `styles.scss` dentro de la carpeta en la que le indicamos en el JSON, en este caso es en la carpeta `assets/css/styles.scss`, dentro del archivo vamos a definir 2 variables de color.
+Si queremos hacer busquedas de color para html podemos buscar en google `html color picker` y nos mostrará un gotero y un gradiente con todos los posibles colores.
+
+La utilidad de usar esta herramienta es para poder emplearlo en más lugares de **CSS**, imaginemos el caso en el que colocamos un color en Hexadecimal en muchisimos elementos y llega el momento en el que la empresa necesita cambiar el color de la paleta de colores, pero ese código se encuentra en muchisimos elementos, será un proceso muy pesado, es por ello que mejor lo ponemos en una variable.
+
+Sólo será necesario poner el código en la variable y poder emplearlo para más cosas.
+
+Para poder ver el poder del ejemplo, es no modificar nuestro **main.css** sino que generaremos un css mediante el **styles.css** por lo que copiamos y pegamos el contenido del main en el styles y colocamos la variable en aquellos sitios donde iba el amarillo.
+
+Y en el index en vez de referenciar al **main.css** lo que haremos es referenciar a **styles.css**, pero si nos damos cuenta, el archivo `styles.css` aún no existe, es por ello que ahora nos auxiliaremos de nuestra dependencia instalada.
+
+Al ejecutar el comando `npm run scss` buscará el archivo **.scss** y lo generará a **.css**, lo ejecutamos y si lo abrimos veremos que todos aquellos lugares en donde usamos la variable ahora tienen el valor del código.
+
+<div align="center"><img src="media/img/modulo4/scss.png" width="70%"/></div>
+
+No podemos usar el archivo **.scss** porque el navegador no puede interpretarlo, es por ello que necesitamos generar los **.css** que es un formato que si permite.
+
+Básicamente nuestro compilador encuentra las variables que hemos definido y las reemplaza. Nos permite ahorrar muchisimo tiempo ante cambios de paletas de colores o demás.
+
+| Elemento | Función |
+| --- | --- |
+| `Variables` | En Sass las variables se definen con el signo de `$` |
