@@ -461,7 +461,9 @@ Si se presta atención se ve que existe un div principal que tiene la clase `mod
 
 En este caso primero declaramos el modal y despues de ello lo accionamos mediante un botón.
 
-Para activarlo es necesario poner en un botón el atributo `data-toggle="modal"`
+Para activarlo es necesario poner en un botón el atributo `data-toggle="modal"` y el uso de `data-target="#contacto"` para saber que contenido estará accionando.
+
+Es importante saber que dentro del modal es posible incluir ualquier código HTML con diversas funciones o declaraciones.
 
 | Elemento | Función |
 | --- | --- |
@@ -471,4 +473,4 @@ Para activarlo es necesario poner en un botón el atributo `data-toggle="modal"`
 | `modal-header` | Como su nombre lo dice, se trata del encabezado |
 | `modal-body` | Como su nombre lo dice, es el apartado en el que se define el cuerpo del modal |
 | `data-toggle="modal"` | Indica que se trata de un atributo para el manejo de un modal |
-| `` | |
+| `data-target="#contacto"` | Que hará referencia al id del contenido modal |
