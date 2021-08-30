@@ -651,6 +651,8 @@ Permite la actualización, la portabilidad y la capacidad de exportar hojas de e
 
 ## Usando Sass
 
+<div align="center"><img src="media/img/modulo4/Sass.png" width="70%"/></div>
+
 Para ello primero debemos instalar **Saas** con el comando `npm install sass --save` o la siguiente alternativa. Si bien en el proyecto no se ha usado mucho el uso de CSS, esto es suficiente para hacer uso de **Mixin** y **Variables**.
 
 La otra alternativa para hacer la instalación y es la que se verá en este proyecto es con: `npm install node-sass --save-dev`, esto es una instalación de node-sass que nos permite instalar **Sass** en node, nos brindará una consola en la que podremos compilar el archivo y obtener un archivo `.CSS`. Para comprobar que se instaló correctamente podemos ir al archivo `package.json` y comprobar que en dependencias de desarrollo tenemos `node-sass:"version"`. Lo pusimos en Dev porque en cuando pasemos a un ambiente de producción no mandaremos los archivos Sass, sino los archivos .CSS, es por ello que no es necesario ponerlo dentro de las dependencias del proyectos que quedarán como realmente productivas.
@@ -703,3 +705,30 @@ y para ser usado unicamente se manda a llamar de la siguiente manera:
 ```
 
 El usar Sass nos permite importar archivos, de esta manera podemos tener un orden extremadamente bueno, automatizar cosas y demás.
+
+## Usando Less
+
+<div align="center"><img src="media/img/modulo4/Less.png" width="70%"/></div>
+
+Es una alternativa al uso de Saas, de igual manera se trata de un precompilado de CSS, para instalarlo es necesario instalar **Less** con el comando `npm install -g less`
+
+| Elemento | Función |
+| --- | --- |
+| `Variables` | En Less las variables se definen con el signo de `@` |
+
+Para compilar en Less es necesario poner el comando `lessc assets/css/styles2.less assets/css/styles2.css`
+
+Para el uso de los Mixin en Less es de la siguiente manera:
+
+```
+.margenes(@top: 0px, @bottom: 0px){
+    margin-top: @top;
+    margin-bottom: @bottom;
+}
+```
+
+Y pára mandarlo a llamar unicamente es necesario colocar un punto:
+
+```
+.margenes(50px, 10px);
+```
