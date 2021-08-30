@@ -732,3 +732,33 @@ Y pára mandarlo a llamar unicamente es necesario colocar un punto:
 ```
 .margenes(50px, 10px);
 ```
+
+# Puesta en producción
+
+Por puesta en producción entendemos a la producción de algunas tareas mediante scripts de NPM que nos permitirán comprimir imagenes, pasas de SCSS a CSS, *comprimir* y *minificar* los archivos de HTML, son unicamente necesarias en un ambito productivo no en un ambito de desarrollo. Este tipo de tareas son aquellas que se requieren para la salida profesional.
+A continuación veremos lo necesario para hacer nuestra **dist** o distribución para mandarlo al ambito que necesitamos.
+
+## Herramientas mediante Scripts NPM
+
+Para llevar acabo lo anterior hay que comenzar a instalar algunas herramientas que hacen falta e iremos agregando algunos scripts en el apartado correspondiente del *Package.json* para ir automatizando ciertas tareas.
+
+Al final de todo, generaremos un **build** que va a concatenar una serie de tareas que iremos desarrollando en el proceso, para que cuando quitemos la tarea Build nos genere una carpeta respecto al proyecto, normalmente por convención se le pone el nombre **dist** la cual alude al termino de distribuición la cual contendrá todas las convenciones productivas del proyecto.
+
+Instalando **onchange** y **rimraf** mediante el comando `npm install --save-dev onchange rimraf`.
+
+* `onchange` lo que nos permite monitorear cambios en los archivos que le especifiquemos y en base a ello podemos especificarle alguna tarea que deseamos ejecutar cuando la ruta que le especifiquemos sea modificada, es muy útil, por ejemplo: Si se mofician los Sass o Less que nos corra el comando que genera los CSS de forma automática.
+
+Una vez instalado el comando anterior acerca de `onchange` podemos generar nuestra primer tarea, y con ello automatizar el proceso. 
+Colocamos lo siguiente `"watch:scss": "onchange 'assets/css/*.scss' -- npm run scss"` en la parte de **scripts** del **package.json**, lo que hará esta tarea es ejecutar el comando `npm run scss` cuando detecte que un archivo scss cambie y nos genere de forma automática el CSS. En palabras breves busca todos los SCSS y los compilará.
+
+Ahora, para automatizar ese proceso lo unico que debemos hacer es ejecutar el comando `npm run watch:scss` y podremos modificar los scss, cuando acabemos de modificar y guardar la tarea de compilación se hará de forma automática.
+
+## Instalando y usando Save Concurrently
+
+Esta herramienta nos va a permitir la ejecución de varias tareas al mismo tiempo de forma concurrente, además al momento del desarrollo podemos compilar automáticamente los archivos, tener el watch y ejecutar nuestro live-server al mismo tiempo. Esto nos ayuda a ahorrar tiempo sin tener que ejecutar, detener y ejecutar de nuevo.
+
+Para instalar esta herramienta necesitamos colocar el siguiente comando `npm install --save concurrently`.
+
+Cuando haya acabado de intalar la herramienta lo que se debe hacer es definir una tarea en el Package.json, lo que ponemos entre `\" comando \"` se trata de una tarea o comando que estará ejecutando mientras esa tarea se ejecuta.
+
+Finalmente para ejecutar esta ultima tarea que nos permite automatizar ejecutaremos el comando **`npm run start`**, al ejecutarlo nos daremos cuenta que tenemos el `onchange` y el `live-server` también en ejecución.
