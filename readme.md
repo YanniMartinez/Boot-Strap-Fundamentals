@@ -817,10 +817,10 @@ Una vez que definimos esta tarea tambien es necesario indicar las reglas del `us
 | Comentario | Accción |
 | --- | --- |
 | `<!--build:css dist/index.css-->` | Le indicamos que haremos un CSS de lo indicado y la dirección a donde lo queremos mandar. |
-| `` |  |
-| `` |  |
-| `` |  |
-| `` |  |
-| `` |  |
-| `` |  |
-| `` |  |
+| `<!--build:js dist/index.js-->` | Le indicamos que haremos un JS de lo indicado y la dirección a donde lo queremos mandar. |
+
+Con estos comentarios estamos diciendole a la herramienta que observe el archivo, ver donde tiene los tags de **JS ó CSS** y armar un archivo sólo con los archivos contenido entre el **build**.
+
+**Nota:** Es una excelente práctica no tener código escrito dentro de las páginas.
+
+Estos pasos y tag's deberemos repetirlo en todas y cada una de las páginas que queremos mandar a producción.
