@@ -806,4 +806,11 @@ Para utilizar `usemin` es necesario definir la siguiente tarea:
 `"usemin":"usemin index.html -d dist --htmlmin -o dist/index.html"`
 
 El `-d` sirve para indicar el destino. Y las `--` flags son todas las tareas a hacer.
-Esto hay que repetirlo para todas las tareas.
+Esto hay que repetirlo para todas las paginas.
+
+La tarea final quedaría de la siguiente manera, anidando todas las páginas que queremos minificar:
+
+`"usemin":"usemin index.html -d dist --htmlmin -o dist/index.html && usemin about.html -d dist --htmlmin -o dist/about.html && usemin prices.html -d dist --htmlmin -o dist/prices.html && usemin contact.html -d dist --htmlmin -o dist/contact.html"`
+
+Una vez que definimos esta tarea tambien es necesario indicar las reglas del `usemin` dentro de nuestro HTML.
+
