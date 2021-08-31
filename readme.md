@@ -814,3 +814,13 @@ La tarea final quedaría de la siguiente manera, anidando todas las páginas que
 
 Una vez que definimos esta tarea tambien es necesario indicar las reglas del `usemin` dentro de nuestro HTML.
 
+| Comentario | Accción |
+| --- | --- |
+| `<!--build:css dist/index.css-->` | Le indicamos que haremos un CSS de lo indicado y la dirección a donde lo queremos mandar. |
+| `` |  |
+| `` |  |
+| `` |  |
+| `` |  |
+| `` |  |
+| `` |  |
+| `` |  |
