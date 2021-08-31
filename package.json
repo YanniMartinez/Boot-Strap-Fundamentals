@@ -5,10 +5,13 @@
   "main": "index.html",
   "scripts": {
     "dev": "lite-server",
-    "start": "concurrently \"nom run watch:scss\" \"npm run dev \" ",
+    "start": "concurrently \"npm run watch:scss\" \"npm run dev \" ",
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "node-sass -o assets/css/ assets/css/",
-    "watch:scss": "onchange 'assets/css/*.scss' -- npm run scss"
+    "watch:scss": "onchange assets/css/*.scss -- npm run scss",
+    "clean":"rimraf dist",
+    "imagemin":"imagemin assets/img/* --out-dir dist/assets/img",
+    "usemin":"usemin index.html -d dist --htmlmin -o dist/index.html"
   },
   "repository": {
     "type": "git",
@@ -23,8 +26,8 @@
   "devDependencies": {
     "lite-server": "^2.6.1",
     "node-sass": "^6.0.1",
-    "onchange": "^7.1.0",
-    "rimraf": "^3.0.2"
+    "onchange": "^4.1.0",
+    "rimraf": "^2.6.2"
   },
   "dependencies": {
     "bootstrap": "^4.6.0",

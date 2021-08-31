@@ -749,7 +749,7 @@ Instalando **onchange** y **rimraf** mediante el comando `npm install --save-dev
 * `onchange` lo que nos permite monitorear cambios en los archivos que le especifiquemos y en base a ello podemos especificarle alguna tarea que deseamos ejecutar cuando la ruta que le especifiquemos sea modificada, es muy útil, por ejemplo: Si se mofician los Sass o Less que nos corra el comando que genera los CSS de forma automática.
 
 Una vez instalado el comando anterior acerca de `onchange` podemos generar nuestra primer tarea, y con ello automatizar el proceso. 
-Colocamos lo siguiente `"watch:scss": "onchange 'assets/css/*.scss' -- npm run scss"` en la parte de **scripts** del **package.json**, lo que hará esta tarea es ejecutar el comando `npm run scss` cuando detecte que un archivo scss cambie y nos genere de forma automática el CSS. En palabras breves busca todos los SCSS y los compilará.
+Colocamos lo siguiente `"watch:scss": "onchange assets/css/*.scss -- npm run scss"` en la parte de **scripts** del **package.json**, lo que hará esta tarea es ejecutar el comando `npm run scss` cuando detecte que un archivo scss cambie y nos genere de forma automática el CSS. En palabras breves busca todos los SCSS y los compilará.
 
 Ahora, para automatizar ese proceso lo unico que debemos hacer es ejecutar el comando `npm run watch:scss` y podremos modificar los scss, cuando acabemos de modificar y guardar la tarea de compilación se hará de forma automática.
 
@@ -762,3 +762,48 @@ Para instalar esta herramienta necesitamos colocar el siguiente comando `npm ins
 Cuando haya acabado de intalar la herramienta lo que se debe hacer es definir una tarea en el Package.json, lo que ponemos entre `\" comando \"` se trata de una tarea o comando que estará ejecutando mientras esa tarea se ejecuta.
 
 Finalmente para ejecutar esta ultima tarea que nos permite automatizar ejecutaremos el comando **`npm run start`**, al ejecutarlo nos daremos cuenta que tenemos el `onchange` y el `live-server` también en ejecución.
+
+Al final el Package.json quedaría de la siguiente manera:
+
+```
+  "scripts": {
+    "dev": "lite-server",
+    "start": "concurrently \"npm run watch:scss\" \"npm run dev \" ",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -o assets/css/ assets/css/",
+    "watch:scss": "onchange assets/css/*.scss -- npm run scss"
+  },
+```
+
+### Trabajando con CopyFiles
+
+Para instalar esta herramienta es necesario ejecutar el siguiente comando `npm install --save-dev copyfiles`, lo colocamos en el ambiente de desarrollo ya que en el de producción no tiene mucho sentido. Esta herramienta nos brinda de comandos para mover archivos de una carpeta a otra.
+
+### Herramienta para comprimir imagenes
+
+Para instalar esta herramienta es necesario ejecutar el siguiente comando `npm -g install --save-dev imagemin-cli` si manda un error con las dependencias entonces ejecutamos el siguinte `sudo npm install -g imagemin-cli --unsafe-perm=true --allow-root`
+
+Ahora para ello generaremos la tarea que se encarge de automatizar las cosas. La cual se definirá con lo siguiente:
+
+`"imagemin":"imagemin assets/img/* --out-dir dist/assets/img""` y para ejecutar el comando sólo es necesario mandar a llamar a **`npm run imagemin`**, notaremos que las imagenes *.png* normalmente suelen comprimirse más que un *.jgp* por la naturaleza de las imagenes. Al hacer esto, notarmeos que nos generará la carpeta *dir* y dentro de ella tendrá casi la misma estructura que tenemos en el ambiente de desarrollo, la unica diferencia es que ahora se tratará de un ambiente productivo. Se puede comprobar el tamaño entre versión comprimida y la original, veremos que si existe una diferencia.
+
+<div align="center"><img src="media/img/modulo4/imagemin.png" width="70%"/></div>
+
+Recordemos que rimraf es como un borrado profundo. Cuando definimos `"clean":"rimraf dist"` le decimos que haga un borrado a profundidad de dist. Esto nos servirá cuando queramos generar una nueva versión distribuible y tenga que borrar lo de la versión anterior.
+
+### Herramienta Usemin
+
+Para instalar esta herramienta es necesario ingresar el siguiente comando en la consola `npm install --save-dev usemin-cli cssmin uglifyjs htmlmin` en esta herramienta se anda agregando **cssmin**, **uglifyjs** y **htmlmin** Esta herramienta nos permitirá configurar utilizando comentarios en nuestro html la tarea de minificar y ofuscar los archivos CSS, JS y paquetes de archivos.
+
+* **Minificacio** Es la eliminación de caracteres redundantes que no aporten valor, esto nos permitirá reducir el espacio del archivo. Además permite unificar archivos en uno sólo. Además tambien sirve para el versionado y evitar el caché.
+
+* **Uglify** nos permite ofuscar todos los JS y CSS, se cambian caracteres, se quitan espacios y a su vez dificulta la lectura. También dificulta a un instruso utilizar nuestros archivos JS o CSS.
+
+#### Definiendo las tareas
+
+Para utilizar `usemin` es necesario definir la siguiente tarea:
+
+`"usemin":"usemin index.html -d dist --htmlmin -o dist/index.html"`
+
+El `-d` sirve para indicar el destino. Y las `--` flags son todas las tareas a hacer.
+Esto hay que repetirlo para todas las tareas.
