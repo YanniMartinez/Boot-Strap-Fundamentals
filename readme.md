@@ -824,3 +824,14 @@ Con estos comentarios estamos diciendole a la herramienta que observe el archivo
 **Nota:** Es una excelente práctica no tener código escrito dentro de las páginas.
 
 Estos pasos y tag's deberemos repetirlo en todas y cada una de las páginas que queremos mandar a producción.
+
+Para mandar a llamar a la tarea debemos ejecutar el comando **`npm run usemin`**
+
+
+### Comando Build
+
+Con el Build estaremos realizando automaticamente todas las tareas anteriormente definidas. Lo primero que hará es limpiar la carpeta build es decir limpieza de la carpeta productiva. Posteriormente se generaron los archivos SCSS, despues la compresión de imagenes y por ultimo el usemin que sirve para minificar todo el html y demás.
+
+Al final la tarea debe quedar de la siguiente manera `"build":"npm run clean && npm run scss && npm run imagemin && npm run usemin"`. Finalmente para ejecutar sólo debemos poner el comando `npm run build`
+
+Al ejecutarlo podemos darnos cuenta que se borra y se ejecuta la carpeta con todos los nuevos procesos.
