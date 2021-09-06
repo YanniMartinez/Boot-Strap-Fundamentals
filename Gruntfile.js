@@ -73,6 +73,17 @@ module.exports = function(grunt){
                 dest: 'dist' 
                 }] 
             }, 
+            /* Para solucionar problema con los iconos */
+            fonts:{
+                files:[{
+                   //for font-awesome
+                   expand: true,
+                   dot: true,
+                   cwd: "node_modles/open-iconic/font",
+                   src: ["fonts/*.*"],
+                   dest: "dist" 
+                }]
+            }
         }, 
        
         clean: { 
