@@ -906,3 +906,5 @@ La herramienta **time-grunt** nos permite tomar estadisticas de agunas de las ta
 **filerev** `npm install grunt-filerev --save-dev` permite agregar una cadena aleatoria o hash para una generación de archiva respecto a otra.
 
 **usemin** `npm install grunt-usemin --save-dev`
+
+>**NOTA:** La sección de scripts debe ser exactamente igual en todas las paginas, en caso contrario nos marcará un error y no generará el archivo, esto está bien porque permite tener una mejor seguridad. Además lo mismo debemos hacerlo con los CSS, **todas las paginas deben tener el mismo bloque**.
