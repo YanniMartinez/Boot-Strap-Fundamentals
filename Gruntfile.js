@@ -6,13 +6,13 @@ module.exports = function(grunt){
             dist: {
                 /* Busca en todos los archivos */
                 files: [{
-                    expand:true, /* Indica que busca en todos los archivos */
+                    expand: true, /* Indica que busca en todos los archivos */
                     /* Dentro de la carpeta css */
-                    cwd: "assets/css",
+                    cwd: "css",
                     /* Los elementos que terminan con .scss */
                     src: ["*.scss"],
                     /* Carpeta destino */
-                    dest: "assets/css",
+                    dest: "css",
                     /* Extensión de salida */
                     ext: ".css"
                 }]

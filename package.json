@@ -26,8 +26,9 @@
   "homepage": "git remote add origin git@github.com:YanniMartinez/Boot-Strap-Fundamentals.git#readme",
   "devDependencies": {
     "cssmin": "^0.4.3",
-    "grunt": "^1.4.1",
-    "grunt-contrib-sass": "^2.0.0",
+    "grunt": "^1.0.3",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0",
     "htmlmin": "0.0.7",
     "lite-server": "^2.6.1",
     "node-sass": "^6.0.1",

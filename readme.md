@@ -867,4 +867,6 @@ Una vez que se instala lo que hay que hacer es configurar la dependencia en el a
 
 **Siempre** que usamos Grunt debemos especificarle tareas y cargarle los paquetes que estamos utilizando. Normalmente tienen el mimsmo nombre que la librería. Y debemos registrarla también.
 
+Para correr lo que acabamos de configurar sólo basta con poner el comando `grunt css` (Verificar compatibilidad porque a mi no me corrió).
 
+Instalando herramienta **watch** mediante el comando `npm install grunt-contrib-watch --save-dev`, esto permitirá observar los cambios y modificaciones en archivos.
