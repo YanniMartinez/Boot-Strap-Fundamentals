@@ -880,3 +880,7 @@ Cuando hagamos un cambio dentro de la carpeta CSS de algún archivo con extenci�
 Instalando la herramienta **browser sync** esto podemos instalarlo mediante `npm install grunt-browser-sync --save-dev`, si recordamos un poco, browserSync es una herramienta que usa LiveServer, esto permitirá automatizar cosas y tener un navegador en tiempo real.
 
 Ahora sólo es necesario ingresar el comando `grunt` y con ello tendremos nuestro servidor corriendo y la escucha de los cambios.
+
+#### Plugin Compresor de imagenes
+
+Para instalar el plugin, es necesario unicamente instalarlo coon el siguiente comando `npm install grunt-contrib-imagemin --save-dev`
