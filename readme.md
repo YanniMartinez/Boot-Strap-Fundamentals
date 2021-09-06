@@ -891,3 +891,18 @@ Una vez configurada sólo es necesario ejecutarla con el comando `grunt img:comp
 La herramienta **time-grunt** nos permite tomar estadisticas de agunas de las tareas. Para instalarla es necesario colocar el comando `npm install time-grunt --save-dev`, permite monitorear si una tarea tarda más que otras y en base a ello poder accionar para mejorar el perfomance de la aplicación.
 
 **Jit-grunt** nos ayuda a recargar todos los modulos, para instalarla unicamente es necesario poner el siguiente comando `npm install jit-grunt --save-dev`,esta herramienta es muy util dado que nos permite agilizar tareas y eso nos ayuda a que demoren menos.
+
+**copy** para incluir este plugin es necesario poner el comando `npm install grunt-contrib-copy --save-dev`, permite copiar archivos. Si nos damos cuenta son las mismas tareas pero ahora para grunt.
+
+**clean** `npm install grunt-contrib-clean --save-dev`
+
+**concat** `npm install grunt-contrib-concat --save-dev`
+
+
+**cssmin** `npm install grunt-contrib-cssmin --save-dev`
+
+**uglify** `npm install grunt-contrib-uglify --save-dev`
+
+**filerev** `npm install grunt-filerev --save-dev` permite agregar una cadena aleatoria o hash para una generación de archiva respecto a otra.
+
+**usemin** `npm install grunt-usemin --save-dev`
