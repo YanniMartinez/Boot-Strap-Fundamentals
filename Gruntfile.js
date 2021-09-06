@@ -17,10 +17,41 @@ module.exports = function(grunt){
                     ext: ".css"
                 }]
             }
+        },
+
+        watch:{
+            /* Definimos que observer css/ */
+            files: ["css/*.scss"],
+            /* Le asociamos la tarea de css */
+            task: ["css"],
+
+        },
+
+        browserSync:{
+            dev:{
+                bsFiles:{ //Browser files
+                    /* Le indicamos las carpetas o archivos que queremos que mire */
+                    src: [
+                        "css/*.css",
+                        "*.html",
+                        "js/*.js"
+                    ]
+                }
+            },
+            /* Se configura y se indica cual será la ruta de nuestro servidor */
+            options:{
+                watchTask: true, //Se indica que estára la escucha activa.
+                server:{
+                    baseDir: "./" //Directorio base para nuestro servidor
+                }
+            }
         }
     });
 
     /* TASKs */
+    grunt.loadNpmTasks("grunt-contrib-watch");
     grunt.loadNpmTasks("grunt-contrib-sass");
+    grunt.loadNpmTasks("grunt-contrib-sync");
     grunt.registerTask("css",["sass"]);
+    grunt.registerTask("default",["browserSync","watch"])//Aquí definimos el browsersync y el watch
 };

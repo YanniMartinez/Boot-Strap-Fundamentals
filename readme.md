@@ -869,4 +869,14 @@ Una vez que se instala lo que hay que hacer es configurar la dependencia en el a
 
 Para correr lo que acabamos de configurar sólo basta con poner el comando `grunt css` (Verificar compatibilidad porque a mi no me corrió).
 
+#### Plugin Watch
 Instalando herramienta **watch** mediante el comando `npm install grunt-contrib-watch --save-dev`, esto permitirá observar los cambios y modificaciones en archivos.
+
+Despues de intalar igualmente es necesario declarar la configuración.
+Cuando hagamos un cambio dentro de la carpeta CSS de algún archivo con extención `*.scss` entonces automáticamente se va a ejecutar la tarea que tenemos definida con el nombre "css". Es semejante a la tarea de node, permite dejar ejecutando la tarea para no estar indicando varias veces a mano.
+
+
+#### Plugin Browser Sync
+Instalando la herramienta **browser sync** esto podemos instalarlo mediante `npm install grunt-browser-sync --save-dev`, si recordamos un poco, browserSync es una herramienta que usa LiveServer, esto permitirá automatizar cosas y tener un navegador en tiempo real.
+
+Ahora sólo es necesario ingresar el comando `grunt` y con ello tendremos nuestro servidor corriendo y la escucha de los cambios.
