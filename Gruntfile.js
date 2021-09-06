@@ -1,4 +1,9 @@
 module.exports = function(grunt){
+    require("time-grunt")(grunt);
+    require("jit-grunt")(grunt,{
+        useminPrepare: "grunt-usemin"
+    });
+    
     grunt.initConfig({
         /* Generando la herramienta de sass */
         sass:{
