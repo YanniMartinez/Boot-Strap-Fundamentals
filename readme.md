@@ -864,3 +864,7 @@ Al crear el archivo le inidcaremos al Node que leerá Grunt el cual podrá inyec
 Ahora instalando la dependencia que convierte de archivos Sass a CSS debemos ejecutar el comando `npm install grunt-contrib-sass --save-dev` 
 
 Una vez que se instala lo que hay que hacer es configurar la dependencia en el archivo Grunt.
+
+**Siempre** que usamos Grunt debemos especificarle tareas y cargarle los paquetes que estamos utilizando. Normalmente tienen el mimsmo nombre que la librería. Y debemos registrarla también.
+
+
