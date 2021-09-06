@@ -45,13 +45,28 @@ module.exports = function(grunt){
                     baseDir: "./" //Directorio base para nuestro servidor
                 }
             }
-        }
+        },
+
+        imagemin:{
+            dynamic:{
+                files:[{
+                    expand: true,
+                    cwd: "./",
+                    src: "img/*.{png,gif,jpg,jpeg}",
+                    dest: "dist/"
+                }]
+            }
+        },
+
+
     });
 
     /* TASKs */
     grunt.loadNpmTasks("grunt-contrib-watch");
     grunt.loadNpmTasks("grunt-contrib-sass");
     grunt.loadNpmTasks("grunt-contrib-sync");
+    grunt.loadNpmTasks("grunt-contrib-imagemin");
     grunt.registerTask("css",["sass"]);
     grunt.registerTask("default",["browserSync","watch"])//Aquí definimos el browsersync y el watch
+    grunt.registerTask("img:compress",["imagemin"]);
 };

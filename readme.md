@@ -883,4 +883,5 @@ Ahora sólo es necesario ingresar el comando `grunt` y con ello tendremos nuestr
 
 #### Plugin Compresor de imagenes
 
-Para instalar el plugin, es necesario unicamente instalarlo coon el siguiente comando `npm install grunt-contrib-imagemin --save-dev`
+Para instalar el plugin, es necesario unicamente instalarlo coon el siguiente comando `npm install grunt-contrib-imagemin --save-dev`. Posterior a ello es necesario configurarla.
+Una vez configurada sólo es necesario ejecutarla con el comando `grunt img:compress`.
