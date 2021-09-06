@@ -27,6 +27,7 @@
   "devDependencies": {
     "cssmin": "^0.4.3",
     "grunt": "^1.4.1",
+    "grunt-contrib-sass": "^2.0.0",
     "htmlmin": "0.0.7",
     "lite-server": "^2.6.1",
     "node-sass": "^6.0.1",
