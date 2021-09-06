@@ -885,3 +885,9 @@ Ahora sólo es necesario ingresar el comando `grunt` y con ello tendremos nuestr
 
 Para instalar el plugin, es necesario unicamente instalarlo coon el siguiente comando `npm install grunt-contrib-imagemin --save-dev`. Posterior a ello es necesario configurarla.
 Una vez configurada sólo es necesario ejecutarla con el comando `grunt img:compress`.
+
+#### Instalación de más plugins.
+
+La herramienta **time-grunt** nos permite tomar estadisticas de agunas de las tareas. Para instalarla es necesario colocar el comando `npm install time-grunt --save-dev`, permite monitorear si una tarea tarda más que otras y en base a ello poder accionar para mejorar el perfomance de la aplicación.
+
+**Jit-grunt** nos ayuda a recargar todos los modulos, para instalarla unicamente es necesario poner el siguiente comando `npm install jit-grunt --save-dev`,esta herramienta es muy util dado que nos permite agilizar tareas y eso nos ayuda a que demoren menos.
