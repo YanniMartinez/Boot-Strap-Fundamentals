@@ -12,7 +12,7 @@
     "clean": "rimraf dist",
     "imagemin": "imagemin assets/img/* --out-dir dist/assets/img",
     "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin about.html -d dist --htmlmin -o dist/about.html && usemin prices.html -d dist --htmlmin -o dist/prices.html && usemin contact.html -d dist --htmlmin -o dist/contact.html",
-    "build":"npm run clean && npm run scss && npm run imagemin && npm run usemin"
+    "build": "npm run clean && npm run scss && npm run imagemin && npm run usemin"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,7 @@
   "homepage": "git remote add origin git@github.com:YanniMartinez/Boot-Strap-Fundamentals.git#readme",
   "devDependencies": {
     "cssmin": "^0.4.3",
+    "grunt": "^1.4.1",
     "htmlmin": "0.0.7",
     "lite-server": "^2.6.1",
     "node-sass": "^6.0.1",

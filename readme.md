@@ -853,3 +853,8 @@ Con esto ya tendriamos nuestro distribuible.
 
 ## Automatizadores de tareas Grunt y Gulp
 
+Para ello primero debemos instalar `Grunt` con el comando `npm install grunt --save-dev`, notese que igualmente lo guardamos en la carpeta de desarrollo.
+
+Una vez que se haya instalado del Grunt procederemos a hacer el GRUNT file, en donde le indicaremos toda información de las herramientas y funciones que vayamos a definir al utilizar Grunt. Creamos un archivo llamado **GruntFile.js** al mismo nivel que el index.
+
+Al crear el archivo le inidcaremos al Node que leerá Grunt el cual podrá inyectar dependencias para despues ejecutarlas dentro del mismo servidor.
